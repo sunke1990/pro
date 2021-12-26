@@ -72,6 +72,7 @@ public class ProApplication {
                 .setMaxConnTotal(50000)
                 .setConnectionTimeToLive(30L, TimeUnit.SECONDS)
                 .setDefaultRequestConfig(config).build();
+
         return client;
     }
 

@@ -7,3 +7,10 @@ spring:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
       connection-init-sqls: set names utf8mb4;
+
+pagehelper:
+  reasonable: false # 禁用合理化时，如果pageNum<1或pageNum>pages会返回空数据
+  support-methods-arguments: true
+  params: count=countSql
+  row-bounds-with-count: true
+  helper-dialect: mysql

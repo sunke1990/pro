@@ -2,6 +2,8 @@ package com.sun.product.pro.service.impl;
 
 import com.sun.product.pro.db.mapper.ProductInfoMapper;
 import com.sun.product.pro.db.model.ProductInfo;
+import com.sun.product.pro.db.vo.ProductVO;
+import com.sun.product.pro.page.Pagination;
 import com.sun.product.pro.service.ProductInfoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +31,12 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     }
 
     @Override
-    public List<ProductInfo> findUpAll() {
+    public Pagination<ProductVO> findAll() {
+        return null;
+    }
+
+    @Override
+    public List<ProductVO> findUpAll() {
         return null;
     }
 

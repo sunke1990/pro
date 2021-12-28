@@ -1,6 +1,7 @@
 package com.sun.product.pro.controller;
 
 import com.sun.product.pro.db.model.ProductInfo;
+import com.sun.product.pro.db.vo.ProductVO;
 import com.sun.product.pro.page.BusinessResult;
 import com.sun.product.pro.page.Pagination;
 import com.sun.product.pro.service.ProductInfoService;
@@ -28,8 +29,9 @@ public class BuyerProductController {
         return BusinessResult.success(productInfoService.findOne(id));
     }
 
+
     @GetMapping("/list")
-    public BusinessResult<Pagination<ProductInfo>> list(){
+    public BusinessResult<Pagination<ProductVO>> list(){
         return BusinessResult.success(productInfoService.findAll());
     }
 

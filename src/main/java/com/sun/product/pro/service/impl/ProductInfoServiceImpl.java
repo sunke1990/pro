@@ -36,7 +36,7 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     }
 
     @Override
-    public List<ProductVO> findUpAll() {
+    public List<ProductInfo> findUpAll() {
         return null;
     }
 

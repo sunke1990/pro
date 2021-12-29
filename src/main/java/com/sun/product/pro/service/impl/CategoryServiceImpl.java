@@ -1,10 +1,8 @@
 package com.sun.product.pro.service.impl;
 
-import com.sun.product.pro.db.mapper.ProductCategoryMapper;
 import com.sun.product.pro.db.model.ProductCategory;
 import com.sun.product.pro.service.CategoryService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,12 +18,9 @@ import java.util.List;
 @Transactional(readOnly = true,propagation = Propagation.SUPPORTS)
 public class CategoryServiceImpl implements CategoryService {
 
-    @Autowired
-    private ProductCategoryMapper categoryMapper;
-
     @Override
     public ProductCategory findOne(Integer categoryId) {
-        return categoryMapper.selectByPrimaryKey(categoryId);
+        return null;
     }
 
     @Override

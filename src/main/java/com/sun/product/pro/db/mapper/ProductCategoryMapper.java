@@ -4,7 +4,7 @@ import com.sun.product.pro.db.model.ProductCategory;
 
 /**
     * @author sunke
-    * @DATE 2021/12/26
+    * @DATE 2021/12/29
 **/
 public interface ProductCategoryMapper {
     int deleteByPrimaryKey(Integer id);

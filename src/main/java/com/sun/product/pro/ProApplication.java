@@ -12,6 +12,7 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
@@ -21,7 +22,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.sun.product.**.mapper")
+@MapperScan(basePackages = "com.sun.product.pro.db.mapper")
 @EnableScheduling
 public class ProApplication {
     @Bean

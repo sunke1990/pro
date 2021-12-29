@@ -10,15 +10,12 @@ import java.util.List;
  * @author sunke
  * @DATE 2021/12/27
  **/
+
 public interface ProductInfoService {
 
     ProductInfo findOne(String id);
 
-    List<ProductInfo> findUpAll();
-
     Pagination<ProductVO> findAll();
-
-    ProductInfo save(ProductInfo productInfo);
 
     void add(ProductInfo productInfo);
 

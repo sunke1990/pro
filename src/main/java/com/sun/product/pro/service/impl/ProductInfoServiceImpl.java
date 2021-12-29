@@ -35,15 +35,6 @@ public class ProductInfoServiceImpl implements ProductInfoService {
         return null;
     }
 
-    @Override
-    public List<ProductInfo> findUpAll() {
-        return null;
-    }
-
-    @Override
-    public ProductInfo save(ProductInfo productInfo) {
-        return null;
-    }
 
     @Override
     public void add(ProductInfo productInfo) {

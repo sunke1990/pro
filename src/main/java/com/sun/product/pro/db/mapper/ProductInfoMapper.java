@@ -1,11 +1,13 @@
 package com.sun.product.pro.db.mapper;
 
 import com.sun.product.pro.db.model.ProductInfo;
+import org.springframework.stereotype.Repository;
 
 /**
     * @author sunke
     * @DATE 2021/12/26
 **/
+@Repository
 public interface ProductInfoMapper {
     int deleteByPrimaryKey(String id);
 

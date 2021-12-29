@@ -47,7 +47,7 @@ public class ProductInfoServiceImpl implements ProductInfoService {
 
     @Override
     public void add(ProductInfo productInfo) {
-
+        infoMapper.insert(productInfo);
     }
 
     @Override
